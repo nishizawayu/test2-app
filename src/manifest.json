@@ -9,7 +9,7 @@
     },
     "permissions": ["activeTab"],
     "content_scripts": [{
-      "matches": ["https://test2-app-beta.vercel.app/"],
+      "matches": ["<all_urls>"],
       "js": [
         "content.js"
       ]
