@@ -2,9 +2,22 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+
+  const btnpress = (i) =>{
+    console.log(i);
+  }
+
+  const btndata = ["すごい","かっこいい","可愛い"];
+
   return (
     <div className="App">
-      <p>あああああああ</p>
+      <div>
+        {
+          btndata.map((text)=>{
+            return <p className='btn' onClick={()=>btnpress(text)}>{text}</p>
+          })
+        }
+      </div>
     </div>
   );
 }
