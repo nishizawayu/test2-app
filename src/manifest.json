@@ -1,0 +1,17 @@
+{
+    "name": "Sample",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "description": "Alert when specific text is clicked",
+    "browser_action": {
+      "default_icon": "icon.png",
+      "default_popup":"public/index.html"
+    },
+    "permissions": ["activeTab"],
+    "content_scripts": [{
+      "matches": ["https://test2-app-beta.vercel.app/"],
+      "js": [
+        "content.js"
+      ]
+    }]
+  }
