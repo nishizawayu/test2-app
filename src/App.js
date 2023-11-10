@@ -12,8 +12,8 @@ function App() {
     <div className="App">
       <div>
         {
-          btndata.map((text)=>{
-            return <p className='btn' onClick={()=>btnpress(text)}>{text}</p>
+          btndata.map((text,index)=>{
+            return <p className='btn' onClick={()=>btnpress(text)} key={index}>{text}</p>
           })
         }
       </div>
