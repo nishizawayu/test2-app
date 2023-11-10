@@ -8,9 +8,3 @@ document.head.appendChild(popupScript);
 popupScript.onload = function () {
   chrome.runtime.sendMessage({ action: 'contentScriptLoaded' });
 };
-
-  
-  
-  
-  
-  
